@@ -1,12 +1,12 @@
 name,email,password,day,month,year,firstName,lastName,company,address,country,state,city,zipcode,mobileNumber,runTest
-Alice Smith,alice_ts@test.com,Pass123!,10,3,1995,Alice,Smith,Tech Inc,456 Oak Rd,United States,California,San Jose,95112,5550143210
-Charlie Brown,charlie_ts@test.com,Pass789!,12,6,1994,Charlie,Brown,Peanuts LLC,101 Pine Rd,United States,Texas,Austin,78701,5550123456
-Diana Prince,diana_ts@test.com,Amazon123!,25,12,1988,Diana,Prince,Justice Corp,777 Gateway Blvd,United States,Florida,Miami,33101,5550198765
-Evan Wright,evan_ts@test.com,WrightPass!,5,9,1991,Evan,Wright,Innova Ltd,543 Willow Ave,United States,Washington,Seattle,98101,5550145678
+Alice Smith,alice_ts@test.com,Pass123!,10,3,1995,Alice,Smith,Tech Inc,456 Oak Rd,United States,California,San Jose,95112,5550143210,false
+Charlie Brown,charlie_ts@test.com,Pass789!,12,6,1994,Charlie,Brown,Peanuts LLC,101 Pine Rd,United States,Texas,Austin,78701,5550123456,false
+Diana Prince,diana_ts@test.com,Amazon123!,25,12,1988,Diana,Prince,Justice Corp,777 Gateway Blvd,United States,Florida,Miami,33101,5550198765,false
+Evan Wright,evan_ts@test.com,WrightPass!,5,9,1991,Evan,Wright,Innova Ltd,543 Willow Ave,United States,Washington,Seattle,98101,5550145678,false
 Fiona Gallagher,fiona_ts@test.com,SouthSide!,14,2,1993,Fiona,Gallagher,Chatter Box,213 N Hoyne Ave,United States,Illinois,Chicago,60612,5550134567,true
-George Clark,george_ts@test.com,ClarkTech!,30,7,1985,George,Clark,Matrix Solution,890 Maple Dr,United States,Michigan,Detroit,48201,5550167890
-Hannah Abbott,hannah_ts@test.com,LeakyCaldron!,18,10,1996,Hannah,Abbott,Leaky Pub,456 Diagon Alley,United States,New York,New York,10001,5550122334
-Ian Malcolm,ian_ts@test.com,ChaosTheory!,11,4,1975,Ian,Malcolm,Dino Analytics,999 Jurassic Way,United States,California,San Diego,92101,5550155543
-Julia Roberts,julia_ts@test.com,PrettyPass!,28,10,1987,Julia,Roberts,Hollywood Pro,321 Sunset Blvd,United States,California,Los Angeles,90028,5550188990
-Kevin Malone,kevin_ts@test.com,ScrantonChili!,1,6,1980,Kevin,Malone,Dunder Mifflin,1725 Slough Ave,United States,Pennsylvania,Scranton,18505,5550111223
-Laura Croft,laura_ts@test.com,TombRaider!,14,2,1992,Laura,Croft,Croft Holdings,142 Manor Croft,United States,Nevada,Las Vegas,89101,5550177441
+George Clark,george_ts@test.com,ClarkTech!,30,7,1985,George,Clark,Matrix Solution,890 Maple Dr,United States,Michigan,Detroit,48201,5550167890,false
+Hannah Abbott,hannah_ts@test.com,LeakyCaldron!,18,10,1996,Hannah,Abbott,Leaky Pub,456 Diagon Alley,United States,New York,New York,10001,5550122334,false
+Ian Malcolm,ian_ts@test.com,ChaosTheory!,11,4,1975,Ian,Malcolm,Dino Analytics,999 Jurassic Way,United States,California,San Diego,92101,5550155543,false
+Julia Roberts,julia_ts@test.com,PrettyPass!,28,10,1987,Julia,Roberts,Hollywood Pro,321 Sunset Blvd,United States,California,Los Angeles,90028,5550188990,false
+Kevin Malone,kevin_ts@test.com,ScrantonChili!,1,6,1980,Kevin,Malone,Dunder Mifflin,1725 Slough Ave,United States,Pennsylvania,Scranton,18505,5550111223,false
+Laura Croft,laura_ts@test.com,TombRaider!,14,2,1992,Laura,Croft,Croft Holdings,142 Manor Croft,United States,Nevada,Las Vegas,89101,5550177441,false
