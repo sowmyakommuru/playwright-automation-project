@@ -1,0 +1,50 @@
+yamlname: Playwright Regression Suite
+
+# 1. Define when this pipeline triggers
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Allows you to trigger the tests manually from GitHub UI
+
+jobs:
+  test_execution:
+    name: Run Automated Browser Tests
+    timeout-minutes: 15
+    runs-on: ubuntu-latest # Runs on standard cloud Linux machines
+
+    steps:
+      # 2. Checkout your code repository
+      - name: Checkout Code Repository
+        uses: actions/checkout@v4
+
+      # 3. Setup NodeJS Environment
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      # 4. Install Clean Dependencies
+      - name: Install Project Dependencies
+        run: npm ci
+
+      # 5. Download Playwright Browser Binaries
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      # 6. Execute Your Tests In Headless CI Mode
+      - name: Execute Framework Tests
+        run: npx playwright test --project=chromium
+        env:
+          CI: true
+
+      # 7. Upload HTML Test Reports on Completion/Failure
+      - name: Archive Playwright Execution Report
+        uses: actions/upload-artifact@v4
+        if: always() # Ensures reports upload even if tests fail
+        with:
+          name: playwright-execution-report
+          path: playwright-report/
+          retention-days: 14

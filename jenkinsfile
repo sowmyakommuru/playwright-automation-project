@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+    
+    tools {
+        // Must match the configured NodeJS installation name in Jenkins
+        nodejs 'NodeJS' 
+    }
+
+    environment {
+        // Enforces headless browser operations inside Jenkins agents
+        CI = 'true'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                // Install NPM dependencies and Playwright browser binaries
+                sh 'npm ci'
+                sh 'npx playwright install --with-deps'
+            }
+        }
+
+        stage('Execute Automation Tests') {
+            steps {
+                // Run your automation suite; catchError prevents pipeline crash on test failure
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    sh 'npm run test'
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            // Generates and archives your Allure Report directly to the Jenkins build UI
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+            
+            // Optional: Backup standard Playwright HTML reports
+            archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+        }
+    }
+}

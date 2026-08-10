@@ -1,0 +1,65 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login.spec.ts >> ParaBank Login Functionality >> TC-02: Verify News link goes to News page
+- Location: tests\Login.spec.ts:26:9
+
+# Error details
+
+```
+Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+Call log:
+  - navigating to "https://parabank.parasoft.com/parabank/index.htm", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import { Page, Locator, expect } from '@playwright/test';
+  2  | 
+  3  | export class LoginPage {
+  4  |     readonly page: Page;
+  5  |     readonly usernameInput: Locator;
+  6  |     readonly passwordInput: Locator;
+  7  |     readonly loginButton: Locator;
+  8  |     readonly errorMessage: Locator;
+  9  |     readonly welcomeMessage: Locator;
+  10 |     readonly newslink: Locator;
+  11 |     
+  12 | 
+  13 |     constructor(page: Page) {
+  14 |         this.page = page;
+  15 |         // Locators map to the exact elements visible on the ParaBank homepage screen
+  16 |         this.usernameInput = page.locator('input[name="username"]');
+  17 |         this.passwordInput = page.locator('input[name="password"]');
+  18 |         this.loginButton = page.locator('input[value="Log In"]');
+  19 |         this.errorMessage = page.locator('p.error');
+  20 |         this.welcomeMessage = page.locator('p.smallText');
+  21 |         this.newslink = page.getByRole('link', { name: 'ParaBank Is Now Re-Opened' })
+  22 |             }
+  23 | 
+  24 |     // Navigation action
+  25 |     async navigate() {
+> 26 |         await this.page.goto('https://parabank.parasoft.com/parabank/index.htm');
+     |                         ^ Error: page.goto: net::ERR_ABORTED; maybe frame was detached?
+  27 |     }
+  28 | 
+  29 |     // Combined business workflow action
+  30 |     async login(username: string, password: string) {
+  31 |         await this.usernameInput.fill(username);
+  32 |         await this.passwordInput.fill(password);
+  33 |         await this.loginButton.click();
+  34 |     }
+  35 | 
+  36 |     async clickNewsLink() {
+  37 |         await this.newslink.click();
+  38 |     }
+  39 | 
+  40 | }
+```
