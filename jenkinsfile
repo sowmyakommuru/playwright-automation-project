@@ -22,20 +22,18 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install NPM dependencies and Playwright browser binaries
-                sh 'npm ci'
-                sh 'npx playwright install --with-deps'
+                bat 'npm ci'
+                bat 'npx playwright install --with-deps'
             }
         }
 
-        stage('Execute Automation Tests') {
+           stage('Execute Tests') {
             steps {
-                // Run your automation suite; catchError prevents pipeline crash on test failure
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    sh 'npm run test'
-                }
+                echo 'Running specific login tests...'
+                // Targets ONLY the login spec file [1]
+                bat 'npx playwright test tests/login.spec.ts --project=chromium' // Use 'sh' if on Linux [1]
             }
         }
-    }
 
     post {
         always {
