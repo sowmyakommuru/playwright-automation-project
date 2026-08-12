@@ -30,10 +30,10 @@ pipeline {
             }
         }
 
-        stage('Execute Tests') {
+         stage('Execute Tests') {
             steps {
-                echo 'Running automated browser tests...'
-                bat 'npx playwright test tests/login.spec.ts --project=chromium'
+                echo 'Running specific login tests...'
+                bat 'npx playwright test tests/login.spec.ts --project=chromium --reporter=html'
             }
         }
     }
