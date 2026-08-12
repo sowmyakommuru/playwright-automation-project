@@ -1,47 +1,54 @@
 pipeline {
     agent any
-    
+
     tools {
-        // Must match the configured NodeJS installation name in Jenkins
-        nodejs 'NodeJS' 
+        nodejs 'NodeJS'
     }
 
     environment {
-        // Enforces headless browser operations inside Jenkins agents
         CI = 'true'
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout Source') {
             steps {
-                cleanWs()
                 checkout scm
             }
         }
 
         stage('Install Dependencies') {
             steps {
-                // Install NPM dependencies and Playwright browser binaries
+                echo 'Installing project dependencies...'
                 bat 'npm ci'
-                bat 'npx playwright install --with-deps'
             }
         }
 
-           stage('Execute Tests') {
+        stage('Install Playwright Browsers') {
             steps {
-                echo 'Running specific login tests...'
-                // Targets ONLY the login spec file [1]
-                bat 'npx playwright test tests/login.spec.ts --project=chromium' // Use 'sh' if on Linux [1]
+                echo 'Downloading required browser binaries...'
+                bat 'npx playwright install --with-deps chromium'
             }
         }
+
+        stage('Execute Tests') {
+            steps {
+                echo 'Running automated browser tests...'
+                bat 'npx playwright test --project=chromium'
+            }
+        }
+    }
 
     post {
         always {
-            // Generates and archives your Allure Report directly to the Jenkins build UI
-            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
-            
-            // Optional: Backup standard Playwright HTML reports
-            archiveArtifacts artifacts: 'playwright-report/**', allowEmptyArchive: true
+            echo 'Archiving test results...'
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: 'index.html',
+                reportName: 'Playwright HTML Report'
+            ])
         }
     }
 }
