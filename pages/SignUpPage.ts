@@ -7,7 +7,8 @@ export class SignupPage {
   readonly signupNameInput: Locator;
   readonly signupEmailInput: Locator;
   readonly signupButton: Locator;
-
+readonly emailInput: Locator;
+  
   // Account Information Locators
   readonly formHeader: Locator;
   readonly genderRadio: Locator;
@@ -36,40 +37,56 @@ export class SignupPage {
   readonly loggedInUserText: Locator;
   readonly deleteAccountLink: Locator;
   readonly accountDeletedHeader: Locator;
+  // readonly errorMessage: Locator;
+  // readonly mainLoginbutton: Locator;
+  // readonly logoutLink: Locator;
+  // readonly loginHeader: Locator;
+  // readonly loginButton: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.loginLink = page.locator('a[href="/login"]');
-    this.signupHeader = page.locator('h2:text("New User Signup!")');
-    this.signupNameInput = page.locator('input[data-qa="signup-name"]');
-    this.signupEmailInput = page.locator('input[data-qa="signup-email"]');
-    this.signupButton = page.locator('button[data-qa="signup-button"]');
+  this.loginLink = page.getByRole('link', { name: 'Signup / Login' }); // Or whatever text is inside the link
+this.signupHeader = page.locator('h2:text("New User Signup!")');
+this.formHeader = page.getByText('Enter Account Information', { exact: false });
+this.accountCreatedHeader = page.getByText('Account Created!', { exact: false });
+this.accountDeletedHeader = page.getByText('Account Deleted!', { exact: false });
 
-    this.formHeader = page.locator('b:text("Enter Account Information")');
-    this.genderRadio = page.locator('#id_gender1');
-    this.passwordInput = page.locator('#password');
-    this.daysSelect = page.locator('#days');
-    this.monthsSelect = page.locator('#months');
-    this.yearsSelect = page.locator('#years');
-    this.newsletterCheck = page.locator('#newsletter');
-    this.optInCheck = page.locator('#optin');
+// --- Signup Form (Initial) ---
+// Kept data-qa using getByTestId (highly recommended if you configure testIdAttribute: 'data-qa' in your playwright.config.ts)
+this.signupNameInput = page.locator('input[data-qa="signup-name"]'); this.signupEmailInput = page.locator('input[data-qa="signup-email"]'); this.signupButton = page.locator('button[data-qa="signup-button"]'); 
 
-    this.firstNameInput = page.locator('#first_name');
-    this.lastNameInput = page.locator('#last_name');
-    this.companyInput = page.locator('#company');
-    this.addressInput = page.locator('#address1');
-    this.countrySelect = page.locator('#country');
-    this.stateInput = page.locator('#state');
-    this.cityInput = page.locator('#city');
-    this.zipcodeInput = page.locator('#zipcode');
-    this.mobileInput = page.locator('#mobile_number');
-    this.createAccountBtn = page.locator('button[data-qa="create-account"]');
+// --- Account Information Form ---
+// Replaced raw IDs with getByLabel. This assumes your form elements have corresponding <label> tags.
+// If your HTML lacks labels, use getByRole('radio', { name: 'Mr.' }) or getByRole('textbox') instead.
+this.genderRadio = page.getByLabel('Mr.'); 
+this.passwordInput = page.getByLabel('Password'); 
+this.daysSelect = page.locator('select[data-qa="days"]');
+this.monthsSelect = page.locator('select[data-qa="months"]');
+this.yearsSelect = page.locator('select[data-qa="years"]');
 
-    this.accountCreatedHeader = page.locator('b:text("Account Created!")');
-    this.continueBtn = page.locator('a[data-qa="continue-button"]');
-    this.loggedInUserText = page.locator('text=Logged in as ');
-    this.deleteAccountLink = page.locator('a[href="/delete_account"]');
-    this.accountDeletedHeader = page.locator('b:text("Account Deleted!")');
+// --- Checkboxes ---
+this.newsletterCheck = page.getByLabel('Sign up for our newsletter!'); 
+this.optInCheck = page.getByLabel('Receive special offers from our partners!'); 
+
+// --- Address Details ---
+this.firstNameInput = page.getByLabel('First name *');
+this.lastNameInput = page.getByLabel('Last name *');
+this.companyInput = page.getByLabel('Company', { exact: true });
+this.addressInput = page.locator('#address1');
+this.countrySelect = page.getByLabel('Country ');
+this.stateInput = page.getByLabel('state');
+this.cityInput = page.getByLabel('city');
+this.zipcodeInput = page.locator('#zipcode');
+this.mobileInput = page.getByLabel('Mobile Number');
+
+// --- Final Actions ---
+this.createAccountBtn = page.getByRole('button', { name: 'Create Account' });
+this.continueBtn = page.getByRole('link', { name: 'Continue' });
+this.deleteAccountLink = page.getByRole('link', { name: 'Delete Account' });
+
+// --- Dynamic Text ---
+// Uses getByText with a regular expression to handle dynamic usernames following the prefix
+this.loggedInUserText = page.getByText(/Logged in as /); 
   }
 
   async navigate() {

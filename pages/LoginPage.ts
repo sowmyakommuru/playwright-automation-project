@@ -39,6 +39,10 @@ export class LoginPage {
     await this.passwordInput.fill(pass);
     await this.loginButton.click();
 
-    return await responsePromise;
+    // const response = await responsePromise;
+    // expect(response.ok()).toBeTruthy();
+    // const jsonBody = await response.json();
+    // // Check the key-value pair
+    // expect(jsonBody).toHaveProperty('isLoggedIn', true);
   }
 }
