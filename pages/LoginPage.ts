@@ -14,13 +14,13 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.loginLink = page.locator('a[href="/login"]');
+    this.loginLink = page.getByRole('link', { name: 'Signup / Login' });
     this.signupHeader = page.locator('h2:text("New User Signup!")');
     this.mainLoginbutton = page.locator('[name=" Signup / Login"]');
     this.loginHeader = page.locator('h2:text("New User Signup!")');
-    this.emailInput = page.locator('input[data-qa="login-email"]');
-    this.passwordInput = page.locator('input[data-qa="login-password"]');
-    this.loginButton = page.locator('button[data-qa="login-button"]');
+    this.emailInput = page.locator('[data-qa="login-email"]');
+this.passwordInput = page.locator('[data-qa="login-password"]');
+    this.loginButton = page.getByRole("button", { name: "Login" });
     this.errorMessage = page.locator('p:text("Your email or password is incorrect!")');
     this.logoutLink = page.locator('a[href="/logout"]');
   }

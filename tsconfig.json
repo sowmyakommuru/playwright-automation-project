@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+
     "target": "ES2020",
     "module": "CommonJS",
     "moduleResolution": "node",
@@ -10,7 +11,8 @@
     "skipLibCheck": true,
     "types": ["node", "playwright/test"],
     "lib": ["ES2020", "DOM"],
-    "baseUrl": "."
+    "baseUrl": ".",
+    "allowJs": true
   },
   "include": ["tests", "pages", "data-loader"],
   "exclude": ["node_modules", "allure-results", "playwright-report", "test-results"]

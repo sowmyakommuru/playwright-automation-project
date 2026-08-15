@@ -1,0 +1,373 @@
+{
+  "cookies": [
+    {
+      "name": "csrftoken",
+      "value": "54CYnSNo4Q1ZzFPxymGxj3tfQMiXqoQQitvalIlum6198P9xN8syNSqlmor7OQsR",
+      "domain": "automationexercise.com",
+      "path": "/",
+      "expires": 1818252846.646039,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUnTizz5Zs_Q1yQj_vZlerDxm1b2iW6-qbI8mH6JJEpf-FkB5LEgrEeG-V0ZosQ",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1821362447.831404,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__mggpc__",
+      "value": "0",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1818339245,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "uid_cross",
+      "value": "b770d402-98b1-11f1-9252-8adcbbfa5bef",
+      "domain": ".rtbrain.app",
+      "path": "/",
+      "expires": 1821362447.948347,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__mguid_",
+      "value": "178ab9c9ae69840b28tpji00msug1klu",
+      "domain": ".admaster.cc",
+      "path": "/",
+      "expires": 1818338448.014326,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "everest_g_v2",
+      "value": "g_surferid~aoBxEAAAAWa8MwAN",
+      "domain": ".everesttech.net",
+      "path": "/",
+      "expires": 1818338448.181072,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "UID",
+      "value": "f5672f79-8a5b-4846-9757-4461416870a6",
+      "domain": "beacon.lynx.cognitivlabs.com",
+      "path": "/",
+      "expires": 1818338448.22223,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tuuid",
+      "value": "950da644-c1c4-4f74-9eca-363ced963026",
+      "domain": ".bidswitch.net",
+      "path": "/",
+      "expires": 1818338448.256666,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "c",
+      "value": "1786802448",
+      "domain": ".bidswitch.net",
+      "path": "/",
+      "expires": 1818338448.219159,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tuuid_lu",
+      "value": "1786802448",
+      "domain": ".bidswitch.net",
+      "path": "/",
+      "expires": 1818338448.256784,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ss",
+      "value": "YXCUIE5AWOCtf2njlxyugSh3DpnSH4B3osNevrxuVQTy4DV0YLaYrecQV%2BDQrBt1qEAHwW2A46JUnxGEo1xUBA%3D%3D",
+      "domain": "beacon.lynx.cognitivlabs.com",
+      "path": "/",
+      "expires": 1818338448.222353,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tuuid",
+      "value": "c048c5fd-1aba-475e-94cd-600f0eb80ab0",
+      "domain": ".mfadsrvr.com",
+      "path": "/",
+      "expires": 1818338448.277647,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "c",
+      "value": "1786802448",
+      "domain": ".mfadsrvr.com",
+      "path": "/",
+      "expires": 1818338448.241602,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "tuuid_lu",
+      "value": "1786802448",
+      "domain": ".mfadsrvr.com",
+      "path": "/",
+      "expires": 1818338448.277774,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mlcwc",
+      "value": "eyJ2ZXJzaW9uIjoxLCJwYXlsb2FkIjoiZHRvSGRnb1NuNk9FZlhPU1oxaVVuY2xVSEpBTEYxU3o0blkzVzdheUNORVhLZ2R0VmpYdmpVRGlLYW5hc1NUU0NwbE1Qcnd1UFoxSWpPK1lGa01kbktaWmNKNXEvVVVjemtHSXVQOWJGUE1vZUZOdVBSemcyWmlZVWJwdG0xc3ZUM0Z4OUZueHFOTkxDOW5QS3dBb2UvdEpUOFdmWDdHbFJQZmpYTDlPMGFPMHBrTEpyNCs2VUdEQ0paOTFwbFk4REF2eWtoTkdDTzNmdkFBRkwrRW1tVlRCVmxOWENyY1Ztenc3OW5PeVJuMlp2RFA2ZDJzY1Q5Y2MxTFowd2w4PSIsIm5vbmNlIjoiQ1FGV2lIZ2RhN0lnVnU2MiJ9",
+      "domain": ".moloco.com",
+      "path": "/",
+      "expires": 1818338448.270304,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ssh",
+      "value": "!google=1786802448",
+      "domain": ".mfadsrvr.com",
+      "path": "/",
+      "expires": 1818338448.277841,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sid_cross",
+      "value": "b8048123-98b1-11f1-a1a5-7eb5e22c3683",
+      "domain": ".rtbrain.app",
+      "path": "/",
+      "expires": 1786809649.547127,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "FCCDCF",
+      "value": "%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%2282b7c5bc-85a4-44de-b129-274bff07cd26%5C%22%2C%5B1786802447%2C608000000%5D%5D%22%5D%5D%5D",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1820499245,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "__gads",
+      "value": "ID=b1b7f167fb9085c5:T=1786802446:RT=1786803244:S=ALNI_MYkF8oYg0ZUxQ4houGrrhGeLUNddg",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1820498446,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__gpi",
+      "value": "UID=000014e27e4f7f83:T=1786802446:RT=1786803244:S=ALNI_MZAcpXJ0O3qtutFdVg-GaVhPHQ7Hg",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1820498446,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=536559fdfe448a34:T=1786802446:RT=1786803244:S=AA-AfjbU5Ir7VNJ9PUs3cL-eu-kS",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1802354446,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "b",
+      "value": "6A80742DE0DD946FF929AD84_",
+      "domain": ".blismedia.com",
+      "path": "/",
+      "expires": 1818343245.508399,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "id",
+      "value": "10595421833731505139",
+      "domain": ".mookie1.com",
+      "path": "/",
+      "expires": 1820931245.524943,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "mdata",
+      "value": "1|10595421833731505139|1786803245441",
+      "domain": ".mookie1.com",
+      "path": "/",
+      "expires": 1820931245.525072,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "ov",
+      "value": "5bcd2258a6bb564fff36ff1f189e71d6",
+      "domain": ".mookie1.com",
+      "path": "/",
+      "expires": 1820931245.525141,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id",
+      "value": "s%3A0-d3cd9c13-74f2-583a-6ed9-a1af57b8ba71.Eths0IsI%2BiJGHtk12sR6FJT%2Brf38x3hqmTuElXnWZqM",
+      "domain": "sync.srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.44338,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id",
+      "value": "s%3A0-d3cd9c13-74f2-583a-6ed9-a1af57b8ba71.Eths0IsI%2BiJGHtk12sR6FJT%2Brf38x3hqmTuElXnWZqM",
+      "domain": ".srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.443472,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v2",
+      "value": "s%3A082cE3TyWDpu2aGvV7i6cUgxwTg.iXj23%2FSDKktceCUemJvcGkxQNXNPzUkhzTrjP%2FspdfA",
+      "domain": "sync.srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.443514,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v2",
+      "value": "s%3A082cE3TyWDpu2aGvV7i6cUgxwTg.iXj23%2FSDKktceCUemJvcGkxQNXNPzUkhzTrjP%2FspdfA",
+      "domain": ".srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.44355,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v3",
+      "value": "s%3AAQAKIGrARzV3afESj5qbj_wnvXAK0KISGALTZhZB2BGgfF7dEHwYBCCt6IHUBjABOgRJDQRBQgQIKZ1B.dW0Cr0BX8ApOVaqdpTfTQ9SDC9d4Ii7mP%2B80kGVnrMI",
+      "domain": "sync.srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.443596,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v3",
+      "value": "s%3AAQAKIGrARzV3afESj5qbj_wnvXAK0KISGALTZhZB2BGgfF7dEHwYBCCt6IHUBjABOgRJDQRBQgQIKZ1B.dW0Cr0BX8ApOVaqdpTfTQ9SDC9d4Ii7mP%2B80kGVnrMI",
+      "domain": ".srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.443635,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v4",
+      "value": "s%3ACiQwMWEwMDVjNS1kMThiLTc1ZDktYTU5MS05YzFjNWE5YzUzYTcQBBoCTkEgTw.5DtrlOt40uJTBmLR0M0qhKHd34vMpVMdTMajFB4hnaA",
+      "domain": "sync.srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.44367,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "sa-user-id-v4",
+      "value": "s%3ACiQwMWEwMDVjNS1kMThiLTc1ZDktYTU5MS05YzFjNWE5YzUzYTcQBBoCTkEgTw.5DtrlOt40uJTBmLR0M0qhKHd34vMpVMdTMajFB4hnaA",
+      "domain": ".srv.stackadapt.com",
+      "path": "/",
+      "expires": 1818339245.443705,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "FCNEC",
+      "value": "%5B%5B%22AKsRol-qC6PqNhhHyHe29HM45-MVvat4yltZzxdOReZQeY19UewZEVgSzC3MBpHnJcw2f2bstaNvurtGaLeI_R858Q6VoC60txj-84dZnw8ixcNb1D-n2ZA7pgnEAicn5Z4Y82a1ePstpZecsQ4hNvEsy9jTlg9f5A%3D%3D%22%5D%5D",
+      "domain": ".automationexercise.com",
+      "path": "/",
+      "expires": 1818339245,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "sessionid",
+      "value": "d4xe1v8qe2xf897s5uytw2m1o8hxsevd",
+      "domain": "automationexercise.com",
+      "path": "/",
+      "expires": 1788012846.519976,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": [
+    {
+      "origin": "https://automationexercise.com",
+      "localStorage": [
+        {
+          "name": "google_adsense_settings",
+          "value": "{\"ca-pub-1677597403311019\":[\"ca-pub-1677597403311019\"]}"
+        },
+        {
+          "name": "google_ama_config",
+          "value": "[[[[null,0,null,[],null,null,\"DIV.footer-widget>DIV.container>DIV.row\"],4,[\"10px\",\"10px\",0],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV#slider-carousel\"],4,[\"10px\",\"10px\",1],[1],null,[],[],1,[],[]],[[null,1,null,[],null,null,\"DIV#accordian>DIV.panel.panel-default>DIV.panel-heading>.panel-title\"],1,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY>SECTION>DIV.container>DIV.row>DIV\"],3,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,2,null,[],null,null,\"DIV#accordian>DIV.panel.panel-default>DIV.panel-heading>.panel-title\"],1,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.footer-bottom\"],4,[\"10px\",\"10px\",0],[5],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.footer-bottom\"],3,[\"10px\",\"10px\",0],[5],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"SECTION#form\"],4,[\"10px\",\"185px\",1],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],2,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.footer-widget\"],1,[\"10px\",\"10px\",0],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV#accordian\"],4,[\"10px\",\"35px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV#accordian>DIV.panel.panel-default>DIV.panel-heading>.panel-title\"],1,[\"10px\",\"30px\",1],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.footer-bottom\"],2,[\"10px\",\"10px\",0],[5],null,[],[],1,[],[]],[[null,1,null,[],null,null,\"BODY>SECTION>DIV.container\"],4,[\"10px\",\"10px\",0],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],3,[\"10px\",\"10px\",1],[5],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY>FOOTER#footer\"],1,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[2,4]],[[null,1,null,[],null,null,\"BODY>SECTION>DIV.container>DIV.row\"],4,[\"10px\",\"10px\",0],[3],null,[],[],1,[],[]]],[],[1786889644838],\"20260812_115458\",[],[[[[null,0,null,[],null,null,\"DIV#slider-carousel>DIV.carousel-inner>DIV.item.active.left>DIV\"],[null,null,null,[],null,null,\"P\"],null,[null,null,null,[],null,null,\"H1,H2,P\"]]]],[[null,[1,3,2,5],null,\"4334590153\",[],[],[0,2],null,null,[1,null,2,16,480,1],[]]],[null,[[1,\"1vp\",[[4,\"2vp\",\"2vp\"],[6,\"3vp\",\"3vp\"]],8,\"1vp\",0.30000001,[\"0.2vp\",\"0vp\",2]],[2,\"300px\",[[4,\"600px\",\"600px\"],[6,\"900px\",\"900px\"]],8,\"300px\",0.30000001,[\"60px\",\"0px\",2]]]],null,null,null,null,null,null,[null,null,null,null,null,null,null,null,null,null,null,0],null,null,[1,null,null,[]],null,[806625773],null,null,[1786789177920],null,null,null,null,null,null,null,null,null,[[\"Toggle toolbar expansion\",\"Toggle privacy and legal settings display\",\"Dismiss privacy and legal settings display\"]]]"
+        },
+        {
+          "name": "__lsa__",
+          "value": "[1786803245136]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as fs from 'fs';
+import * as path from 'path';
+
+const authFilePath = path.join(process.cwd(), '.auth/user.json');
 
 export default defineConfig({
   testDir: './tests',
@@ -20,8 +24,10 @@ export default defineConfig({
     // 3. TURN ON VIDEOS
     // Options: 'off' | 'on' | 'retain-on-failure' | 'on-first-retry'
     video: 'on', 
+
+
+       storageState: fs.existsSync(authFilePath) ? authFilePath : undefined,
     
-    // (Optional) Turn on Traces which are even better for debugging!
    
   },
   
