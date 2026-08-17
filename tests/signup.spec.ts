@@ -8,6 +8,10 @@ const activeRecords = loadActiveSignupData();
 
 // Load the data directly before generating the test suite blocks
 const userRecords = loadSignupData();
+test.beforeEach(async ({ page, context }) => {
+  // 1. Clear all cookies for this context
+  await context.clearCookies();
+});
 
 for (const record of activeRecords) {
   test(`Data Driven Signup for user: ${record.name}`, async ({ page }) => {
