@@ -5,7 +5,7 @@ const activeRecords = loadActiveSignupData();
 
 test('authenticate user and save storage state via Page Objects', async ({ page, loginPage, signupPage }) => {
   if (!activeRecords || activeRecords.length === 0) {
-    throw new Error("❌ Data Error: activeRecords array is empty!");
+    throw new Error(" Data Error: activeRecords array is empty!");
   }
 
   const primaryUser = activeRecords[0];
