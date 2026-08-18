@@ -32,7 +32,7 @@ export default defineConfig({
   },
   
   // 4. Ensure you are using the HTML reporter to view them easily
-  reporter: [['html']], 
+  reporter: [['html', { open: 'always' }] ], 
 
 
   projects: [
@@ -44,7 +44,22 @@ export default defineConfig({
         extraHTTPHeaders: {
           'X-Block-Ads': 'true'
         }
+        
       },
+    },
+    // {
+    //   name: 'firefox',
+    //   use: { 
+    //     ...devices['Desktop Firefox']
+    //   }
+    // },
+    {
+      name: 'Microsoft Edge',
+      use: { 
+        ...devices['Desktop Chrome'], 
+        channel: 'msedge' // 👈 This explicitly tells Playwright to launch Edge instead of Chromium
+      },
+ 
     },
     // ... keep your other project profiles exactly the same below ...
   ],
