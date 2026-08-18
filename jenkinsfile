@@ -33,7 +33,7 @@ pipeline {
          stage('Execute Tests') {
             steps {
                 echo 'Running specific login tests...'
-                bat 'npx playwright test tests/login.spec.ts --project=chromium --reporter=html'
+                bat 'npx playwright test tests/Login.spec.ts --project=chromium --reporter=html'
             }
         }
     }
